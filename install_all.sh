@@ -135,7 +135,10 @@ sudo ufw allow 445
 
 # Final instructions to run commands
 echo "-------------------------------------------------"
-echo "To complete the setup, run the following commands:"
-echo "  sudo /etc/default/tailscaled"
-echo "  sudo /etc/pam.d/sshd"
+echo "To complete the setup, run the following commands
+echo "  sudo passwd root"
+echo "  (cd /etc/default && sudo tailscaled &)
+        (cd /etc/pam.d && sudo sshd &)
+        sudo tailscale up --advertise-exit-node
+"
 echo "-------------------------------------------------"
