@@ -1,0 +1,6 @@
+Final Commands to run:
+
+sudo passwd root
+cd /etc/default && sudo tailscaled
+cd /etc/pam.d && sudo sshd
+sudo tailscale up --advertise-exit-node
