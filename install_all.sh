@@ -134,11 +134,5 @@ sudo ufw allow 6000
 sudo ufw allow 445
 
 # Final instructions to run commands
-echo "-------------------------------------------------"
-echo "To complete the setup, run the following commands "
-echo "  sudo passwd root"
-echo "   cd /etc/default && sudo tailscaled "
-echo "   cd /etc/pam.d && sudo sshd "
-echo "  sudo tailscale up --advertise-exit-node "
-
-echo "-------------------------------------------------"
+curl -s https://raw.githubusercontent.com/Ayan-Nalawade/Scripts/refs/heads/main/Instructions.txt >> ~/instructions
+cat ~/instructions
