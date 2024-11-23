@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Display "GOOGLE DEBUNKER" in big font
-echo "GOOGLE DEBUNKER" | figlet
+echo "GOOGLE DEBUNKER" 
 
 # Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
