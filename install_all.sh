@@ -29,5 +29,11 @@ if [ ! -d "/storage" ]; then
     sudo chmod -R 0777 /storage
 fi
 
+cd /etc/default
+tailscaled
+cd /etc/pam.d
+sshd
+
+
 # Run Docker container
 sudo docker run -it -p 445:445 -e "USER=cqqp" -e "PASS=09117518" -v "/home/example:/storage" cqqp/samba
